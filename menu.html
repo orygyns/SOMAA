@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – SOMAA Restobar | Biryani, Kebabs, Continental & More | Visakhapatnam</title>
+  <meta name="description" content="Explore the full SOMAA Restobar menu — signature biryanis, tandoori kebabs, Andhra coastal seafood, continental favourites, curries, breads and more. Visakhapatnam's premier luxury dining destination at Siripuram & Yendada." />
+  <meta name="keywords" content="SOMAA Restobar menu, Vizag biryani, Visakhapatnam restobar menu, tandoori kebabs Vizag, seafood Vizag, Andhra cuisine menu, continental food Vizag" />
+  <link rel="canonical" href="https://www.somaarestobar.com/menu.html" />
+  <meta name="theme-color" content="#0F0F0F" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Menu – SOMAA Restobar, Visakhapatnam" />
+  <meta property="og:description" content="Signature biryanis, tandoori kebabs, coastal seafood, continental favourites & more — explore the full SOMAA Restobar menu." />
+  <meta property="og:image" content="https://www.somaarestobar.com/somaa.png" />
+  <meta property="og:url" content="https://www.somaarestobar.com/menu.html" />
+  <meta property="og:site_name" content="SOMAA Restobar" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Menu – SOMAA Restobar, Visakhapatnam" />
+  <meta name="twitter:description" content="Signature biryanis, tandoori kebabs, coastal seafood, continental favourites & more — explore the full SOMAA Restobar menu." />
+  <meta name="twitter:image" content="https://www.somaarestobar.com/somaa.png" />
+
+  <!-- JSON-LD Menu Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "SOMAA Restobar Menu",
+    "description": "Signature biryanis, tandoori kebabs, coastal seafood, continental favourites, curries and breads at SOMAA Restobar, Visakhapatnam.",
+    "url": "https://www.somaarestobar.com/menu.html",
+    "inLanguage": "en",
+    "hasMenuSection": [
+      { "@type": "MenuSection", "name": "Starters & Kebabs" },
+      { "@type": "MenuSection", "name": "Continental & Snacks" },
+      { "@type": "MenuSection", "name": "Rice, Biryani & Pulao" },
+      { "@type": "MenuSection", "name": "Main Course" },
+      { "@type": "MenuSection", "name": "Continental Mains & Breads" },
+      { "@type": "MenuSection", "name": "Bar & Sweet Endings" }
+    ]
+  }
+  </script>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─────────────── DESIGN TOKENS (matches site-wide system) ─────────────── */
+    :root {
+      --bg:         #0F0F0F;
+      --card:       #171717;
+      --accent:     #FF7A00;
+      --hover:      #FF9A2F;
+      --text:       #FFFFFF;
+      --muted:      #BDBDBD;
+      --border:     rgba(255,122,0,0.18);
+      --radius:     10px;
+      --transition: 0.28s cubic-bezier(.4,0,.2,1);
+      --veg:        #4CAF50;
+      --nonveg:     #E5484D;
+      --egg:        #FFB300;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif !important;
+      background: var(--bg) !important;
+      color: var(--text) !important;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    .s-pad { padding: 70px 0; }
+    .s-pad-alt { background: #111; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: clamp(1.5rem, 3vw, 2.05rem);
+      font-weight: 700;
+      line-height: 1.22;
+      margin-bottom: 10px;
+    }
+    .section-title span { color: var(--accent); }
+    .section-sub {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 560px;
+    }
+    .section-sub.mx-auto { margin-left: auto; margin-right: auto; }
+    .s-divider { width: 40px; height: 2px; background: var(--accent); margin: 12px 0 0; }
+    .s-divider.mx-auto { margin-left: auto; margin-right: auto; }
+
+    .btn-s {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 9px 20px; border-radius: var(--radius);
+      font-family: 'Poppins', sans-serif; font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer;
+      transition: var(--transition); border: none; text-decoration: none; white-space: nowrap;
+    }
+    .btn-s:hover { text-decoration: none; }
+    .btn-primary-s { background: var(--accent); color: #fff !important; }
+    .btn-primary-s:hover { background: var(--hover); transform: translateY(-1px); color: #fff !important; }
+    .btn-outline-s { background: transparent; color: var(--accent) !important; border: 1.5px solid var(--accent); }
+    .btn-outline-s:hover { background: var(--accent); color: #fff !important; transform: translateY(-1px); }
+
+    /* ─────────────── NAVBAR ─────────────── */
+    #header {
+      position: sticky; top: 0; z-index: 1050;
+      background: rgba(15,15,15,0.97) !important;
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,122,0,0.1);
+      transition: box-shadow var(--transition);
+    }
+    #header.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.65); }
+    .navbar { padding: 0 !important; min-height: 62px; }
+    .navbar-brand { padding: 0; margin-right: 0; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-mark {
+      width: 38px; height: 38px; background: var(--accent); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 800; color: #fff; letter-spacing: -0.03em; flex-shrink: 0;
+    }
+    .logo-text { display: flex; flex-direction: column; line-height: 1; }
+    .logo-name { font-size: 1.05rem; font-weight: 800; letter-spacing: 0.12em; color: var(--text); }
+    .logo-tagline { font-size: 0.58rem; font-weight: 400; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase; margin-top: 2px; }
+
+    .navbar-toggler { border: 1.5px solid rgba(255,122,0,0.4) !important; padding: 5px 8px !important; border-radius: 6px !important; }
+    .navbar-toggler:focus { box-shadow: 0 0 0 2px rgba(255,122,0,0.35) !important; }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,0.85)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    }
+    .navbar-collapse { background: #111; }
+    @media (max-width: 991.98px) { .navbar-collapse { border-top: 1px solid rgba(255,122,0,0.12); padding: 10px 0 14px; } }
+    @media (min-width: 992px) { .navbar-collapse { background: transparent; } }
+
+    .nav-link-s {
+      font-size: 0.8rem; font-weight: 500; color: var(--muted) !important;
+      padding: 8px 14px !important; border-radius: 6px; transition: var(--transition);
+      letter-spacing: 0.04em; display: block;
+    }
+    .nav-link-s:hover, .nav-link-s.active { color: var(--text) !important; background: rgba(255,255,255,0.06); }
+    .nav-cta-s { background: var(--accent) !important; color: #fff !important; font-weight: 600; padding: 8px 18px !important; }
+    .nav-cta-s:hover { background: var(--hover) !important; color: #fff !important; }
+    @media (max-width: 991.98px) {
+      .nav-link-s { padding: 10px 22px !important; border-radius: 0; }
+      .nav-cta-s { margin: 8px 22px 2px !important; border-radius: var(--radius) !important; text-align: center; display: block; }
+    }
+
+    /* ─────────────── PAGE HERO (Menu) ─────────────── */
+    #menu-hero { position: relative; min-height: 46vh; display: flex; align-items: center; overflow: hidden; }
+    .menu-hero-bg { position: absolute; inset: 0; background: url('somaa.png') center 30% / cover no-repeat; z-index: 0; }
+    .menu-hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(15,15,15,0.94) 0%, rgba(15,15,15,0.8) 55%, rgba(15,15,15,0.92) 100%);
+      z-index: 1;
+    }
+    .menu-hero-inner { position: relative; z-index: 2; width: 100%; padding: 60px 0 40px; }
+    .breadcrumb-s { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; color: var(--muted); margin-bottom: 18px; }
+    .breadcrumb-s a { color: var(--muted); transition: var(--transition); }
+    .breadcrumb-s a:hover { color: var(--accent); }
+    .breadcrumb-s .sep { color: var(--border); }
+    .breadcrumb-s .current { color: var(--accent); }
+
+    .menu-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.1; margin-bottom: 12px; }
+    .menu-hero-title span { color: var(--accent); }
+    .menu-hero-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.78; max-width: 600px; margin-bottom: 22px; }
+
+    .menu-stats-row { display: flex; gap: 22px; flex-wrap: wrap; }
+    .menu-stat-pill {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,122,0,0.08); border: 1px solid var(--border);
+      border-radius: 999px; padding: 7px 16px; font-size: 0.74rem; color: var(--muted);
+    }
+    .menu-stat-pill strong { color: var(--text); font-weight: 600; }
+
+    /* ─────────────── STICKY FILTER BAR ─────────────── */
+    #filter-bar {
+      position: sticky; top: 62px; z-index: 1040;
+      background: rgba(17,17,17,0.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,122,0,0.1);
+      padding: 12px 0;
+    }
+    .filter-row { display: flex; align-items: center; gap: 14px; flex-wrap: nowrap; }
+    .diet-toggle-group { display: flex; gap: 6px; flex-shrink: 0; }
+    .diet-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--card); border: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted); font-size: 0.72rem; font-weight: 600;
+      padding: 7px 13px; border-radius: 999px; cursor: pointer; transition: var(--transition);
+      white-space: nowrap; font-family: 'Poppins', sans-serif;
+    }
+    .diet-btn:hover { border-color: var(--border); color: var(--text); }
+    .diet-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .diet-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .dot-veg { background: var(--veg); }
+    .dot-nonveg { background: var(--nonveg); }
+    .dot-egg { background: var(--egg); }
+
+    .filter-divider { width: 1px; height: 22px; background: rgba(255,255,255,0.1); flex-shrink: 0; }
+
+    .pill-scroll { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+    .pill-scroll::-webkit-scrollbar { display: none; }
+    .cat-pill {
+      flex-shrink: 0; font-size: 0.72rem; font-weight: 500; color: var(--muted);
+      background: transparent; border: 1px solid rgba(255,255,255,0.08);
+      padding: 7px 14px; border-radius: 999px; transition: var(--transition); white-space: nowrap;
+    }
+    .cat-pill:hover, .cat-pill.active { color: var(--text); border-color: var(--border); background: rgba(255,122,0,0.1); }
+
+    @media (max-width: 767.98px) {
+      #filter-bar { top: 62px; }
+      .filter-row { flex-wrap: wrap; gap: 10px; }
+      .filter-divider { display: none; }
+    }
+
+    /* ─────────────── DISH GRID / CARDS ─────────────── */
+    .subsection-head { display: flex; align-items: baseline; gap: 10px; margin: 0 0 18px; }
+    .subsection-head:not(:first-child) { margin-top: 38px; }
+    .subsection-title { font-size: 1rem; font-weight: 700; margin: 0; padding-left: 12px; border-left: 3px solid var(--accent); }
+    .subsection-note { font-size: 0.72rem; color: var(--muted); }
+
+    .dish-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 12px; }
+
+    .dish-card {
+      background: var(--card); border: 1px solid rgba(255,255,255,0.05);
+      border-radius: var(--radius); padding: 14px 16px; transition: var(--transition);
+    }
+    .dish-card:hover { border-color: var(--border); box-shadow: 0 4px 20px rgba(255,122,0,0.08); }
+    .dish-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+    .dish-id { display: flex; align-items: flex-start; gap: 9px; min-width: 0; }
+    .dish-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+    .dish-name { font-size: 0.86rem; font-weight: 600; line-height: 1.4; margin: 0; }
+    .dish-price { font-size: 0.86rem; font-weight: 700; color: var(--accent); white-space: nowrap; flex-shrink: 0; }
+    .dish-desc { font-size: 0.74rem; color: var(--muted); line-height: 1.6; margin: 6px 0 0 18px; }
+    .dish-tag {
+      display: inline-block; margin: 7px 0 0 18px; font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+      background: rgba(255,122,0,0.1); border: 1px solid var(--border);
+      border-radius: 4px; padding: 2px 7px;
+    }
+    .dish-card.is-hidden { display: none; }
+
+    .menu-legend { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; font-size: 0.74rem; color: var(--muted); margin-bottom: 6px; }
+    .menu-legend .legend-item { display: flex; align-items: center; gap: 7px; }
+
+    /* ─────────────── BAR / SWEETS DESCRIPTIVE CARDS ─────────────── */
+    .feature-mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 14px; }
+    .feature-mini { background: var(--card); border: 1px solid rgba(255,255,255,0.05); border-radius: var(--radius); padding: 20px; transition: var(--transition); height: 100%; }
+    .feature-mini:hover { border-color: var(--border); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(255,122,0,0.08); }
+    .feature-mini-icon { font-size: 1.3rem; margin-bottom: 10px; }
+    .feature-mini h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; }
+    .feature-mini p { font-size: 0.78rem; color: var(--muted); line-height: 1.65; margin: 0; }
+    .note-banner {
+      background: rgba(255,122,0,0.06); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 16px 20px; font-size: 0.78rem; color: var(--muted); margin-top: 18px;
+    }
+    .note-banner strong { color: var(--text); }
+
+    /* ─────────────── RESERVE CARDS (reused) ─────────────── */
+    .s-card { background: var(--card); border: 1px solid rgba(255,255,255,0.05); border-radius: var(--radius); transition: var(--transition); height: 100%; }
+    .s-card:hover { border-color: var(--border); box-shadow: 0 6px 28px rgba(255,122,0,0.1); transform: translateY(-3px); }
+    .reserve-card { padding: 28px 24px; }
+    .reserve-card-icon { font-size: 1.75rem; margin-bottom: 12px; }
+    .reserve-card h3 { font-size: 1.08rem; font-weight: 700; margin-bottom: 6px; }
+    .reserve-card p { font-size: 0.81rem; color: var(--muted); margin-bottom: 18px; line-height: 1.65; }
+    .reserve-actions { display: flex; gap: 9px; flex-wrap: wrap; }
+
+    /* ─────────────── FOOTER ─────────────── */
+    footer { background: #080808; border-top: 1px solid rgba(255,122,0,0.12); padding: 50px 0 26px; }
+    .footer-brand-desc { font-size: 0.77rem; color: var(--muted); line-height: 1.75; margin: 14px 0 16px; max-width: 260px; }
+    .social-links { display: flex; gap: 8px; }
+    .social-link {
+      width: 34px; height: 34px; border-radius: 8px; background: var(--card);
+      border: 1px solid rgba(255,255,255,0.07); display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; color: var(--muted); transition: var(--transition); text-decoration: none;
+    }
+    .social-link:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .footer-col-title {
+      font-size: 0.73rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text); margin-bottom: 14px; padding-bottom: 9px; border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a { font-size: 0.79rem; color: var(--muted); transition: var(--transition); }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-contact-item { display: flex; align-items: flex-start; gap: 8px; font-size: 0.77rem; color: var(--muted); margin-bottom: 9px; }
+    .footer-contact-item span:first-child { font-size: 0.85rem; margin-top: 1px; flex-shrink: 0; }
+    .footer-contact-item a { color: var(--accent); }
+    .footer-contact-item a:hover { text-decoration: underline; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; margin-top: 40px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .footer-bottom p { font-size: 0.71rem; color: var(--muted); margin: 0; }
+    .back-top {
+      width: 36px; height: 36px; background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; font-size: 0.88rem; color: var(--accent);
+      cursor: pointer; transition: var(--transition); text-decoration: none;
+    }
+    .back-top:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* ─────────────── REVEAL ANIMATION ─────────────── */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.52s ease, transform 0.52s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+
+    @media (max-width: 767.98px) {
+      .s-pad { padding: 50px 0; }
+      #menu-hero { min-height: 40vh; }
+      .dish-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ HEADER ══════════════════════════════════ -->
+  <header id="header">
+    <div class="container-xl px-3">
+      <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <a class="navbar-brand logo" href="index.html" aria-label="SOMAA Restobar – Home">
+          <div class="logo-mark" aria-hidden="true">S</div>
+          <div class="logo-text">
+            <span class="logo-name">SOMAA</span>
+            <span class="logo-tagline">Restobar · Visakhapatnam</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navCollapse">
+          <ul class="navbar-nav align-items-lg-center gap-lg-1 py-1 py-lg-0">
+            <li class="nav-item"><a class="nav-link-s" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link-s active" href="menu.html" aria-current="page">Menu</a></li>
+            <li class="nav-item"><a class="nav-link-s" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link-s nav-cta-s" href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════ PAGE HERO ══════════════════════════════════ -->
+  <section id="menu-hero" aria-label="SOMAA Restobar Menu">
+    <div class="menu-hero-bg" role="img" aria-label="SOMAA Restobar dining ambience"></div>
+    <div class="menu-hero-overlay" aria-hidden="true"></div>
+    <div class="menu-hero-inner">
+      <div class="container-xl px-3">
+        <div class="row">
+          <div class="col-12 col-lg-9">
+            <nav class="breadcrumb-s" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span class="sep">/</span>
+              <span class="current">Menu</span>
+            </nav>
+            <h1 class="menu-hero-title">Our <span>Menu</span></h1>
+            <p class="menu-hero-desc">From slow-cooked signature biryanis and tandoor-fired kebabs to Andhra coastal seafood and continental favourites — every dish at SOMAA is crafted to be the centrepiece of a memorable evening.</p>
+            <div class="menu-stats-row" aria-label="Menu highlights">
+              <div class="menu-stat-pill"><span aria-hidden="true">🍽️</span> <strong>200+</strong>&nbsp;dishes</div>
+              <div class="menu-stat-pill"><span aria-hidden="true">🦐</span> Coastal seafood specialities</div>
+              <div class="menu-stat-pill"><span aria-hidden="true">🎵</span> Live music every weekend</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FILTER BAR ══════════════════════════════════ -->
+  <div id="filter-bar">
+    <div class="container-xl px-3">
+      <div class="filter-row">
+        <div class="diet-toggle-group" role="group" aria-label="Filter by dietary preference">
+          <button type="button" class="diet-btn active" data-diet="all">All</button>
+          <button type="button" class="diet-btn" data-diet="veg"><span class="diet-dot dot-veg" aria-hidden="true"></span>Veg</button>
+          <button type="button" class="diet-btn" data-diet="nonveg"><span class="diet-dot dot-nonveg" aria-hidden="true"></span>Non-Veg</button>
+          <button type="button" class="diet-btn" data-diet="egg"><span class="diet-dot dot-egg" aria-hidden="true"></span>Egg</button>
+        </div>
+        <div class="filter-divider" aria-hidden="true"></div>
+        <div class="pill-scroll" aria-label="Jump to menu section">
+          <a href="#starters" class="cat-pill">Starters & Kebabs</a>
+          <a href="#continental-snacks" class="cat-pill">Continental & Snacks</a>
+          <a href="#rice-biryani" class="cat-pill">Rice & Biryani</a>
+          <a href="#main-course" class="cat-pill">Main Course</a>
+          <a href="#mains-breads" class="cat-pill">Mains & Breads</a>
+          <a href="#bar-sweets" class="cat-pill">Bar & Sweets</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════ STARTERS & KEBABS ══════════════════════════════════ -->
+    <section id="starters" class="s-pad" aria-labelledby="starters-title">
+      <div class="container-xl px-3">
+
+        <div class="reveal">
+          <span class="section-label">Begin The Evening</span>
+          <h2 class="section-title" id="starters-title">Starters & <span>Kebabs</span></h2>
+          <div class="s-divider"></div>
+          <p class="section-sub mt-3">Tandoor-fired kebabs, coastal seafood starters and Indo-Chinese favourites — the perfect prelude to a SOMAA evening.</p>
+          <div class="menu-legend mt-3" aria-label="Dietary legend">
+            <span class="legend-item"><span class="diet-dot dot-veg" aria-hidden="true"></span>Vegetarian</span>
+            <span class="legend-item"><span class="diet-dot dot-nonveg" aria-hidden="true"></span>Non-Vegetarian</span>
+            <span class="legend-item"><span class="diet-dot dot-egg" aria-hidden="true"></span>Contains Egg</span>
+          </div>
+        </div>
+
+        <div class="subsection-head" style="margin-top:30px;">
+          <h3 class="subsection-title">Somaa Special Kebabs</h3>
+          <span class="subsection-note">Tandoor-grilled signatures</span>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Somaa Special Kebab</p></div><span class="dish-price">₹525</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tangdi Schezwan Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mutton Boti Kebab</p></div><span class="dish-price">₹565</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Schezwan Kalmi Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Rosemary Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Hyderabadi Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Lasooni Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Patiala Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Smoked Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tandoori Stick Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Barbeque Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Herb Kebab</p></div><span class="dish-price">₹490</span></div><span class="dish-tag">Chef's Special</span></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Tandoori Veg Starters</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Kashmiri Pineapple</p></div><span class="dish-price">₹295</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Tandoori Mushroom</p></div><span class="dish-price">₹295</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Tandoori Aloo</p></div><span class="dish-price">₹295</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Malai Mushroom</p></div><span class="dish-price">₹305</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Paneer Tikka</p></div><span class="dish-price">₹365</span></div><p class="dish-desc">Paneer chunks marinated with spices and yogurt, grilled in a tandoor.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Hara Bhara Kebab</p></div><span class="dish-price">₹365</span></div><p class="dish-desc">Mashed potato, spinach, green peas & chilli kebab.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Stick Paneer Tikka</p></div><span class="dish-price">₹405</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Cheese Paneer Tikka</p></div><span class="dish-price">₹415</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Malai Paneer Tikka</p></div><span class="dish-price">₹415</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Shahi Paneer Tikka</p></div><span class="dish-price">₹415</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Tandoori Veg Platter</p></div><span class="dish-price">₹765</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Tandoori Non-Veg Starters</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Hariyali Kebab</p></div><span class="dish-price">₹375</span></div><p class="dish-desc">Boneless chicken marinated in curd, spinach & mint, grilled in tandoor.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Achari Tikka</p></div><span class="dish-price">₹375</span></div><p class="dish-desc">Boneless chicken marinated in yogurt and achari masala, shallow fried.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Tikka</p></div><span class="dish-price">₹365</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Murgh Malai Kebab</p></div><span class="dish-price">₹390</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Reshmi Kebab</p></div><span class="dish-price">₹405</span></div><p class="dish-desc">Boneless chicken marinated in curd, cream, cashew nuts & spices.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Cheese Kebab</p></div><span class="dish-price">₹405</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Tangdi Kebab</p></div><span class="dish-price">₹425</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tandoori Murgh (Whole)</p></div><span class="dish-price">₹425</span></div><p class="dish-desc">Whole grilled chicken with sensational spices.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Murgh E Kalim</p></div><span class="dish-price">₹435</span></div><p class="dish-desc">Chicken drumsticks marinated with yogurt & spices, oven-cooked.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Malai Fish</p></div><span class="dish-price">₹425</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tandoori Fish Tikka</p></div><span class="dish-price">₹435</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tandoori Prawns</p></div><span class="dish-price">₹475</span></div><p class="dish-desc">Prawns marinated in cream & masala, grilled in a tandoor.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tandoori Vanjaram</p></div><span class="dish-price">₹785</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tandoori Pomfret</p></div><span class="dish-price">₹815</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Indian Starters</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Roast</p></div><span class="dish-price">₹425</span></div><p class="dish-desc">Fried chicken full of flavour and spice.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Andhra Chicken Fry</p></div><span class="dish-price">₹425</span></div><p class="dish-desc">A very spicy and delicious Andhra-style recipe.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Karivepaku Chicken</p></div><span class="dish-price">₹435</span></div><p class="dish-desc">Roasted curry leaves & peppercorns crushed into the fry.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Cashew Chicken</p></div><span class="dish-price">₹435</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Apollo Chicken</p></div><span class="dish-price">₹435</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Natukodi Fry</p></div><span class="dish-price">₹535</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Natukodi Pepper Fry</p></div><span class="dish-price">₹535</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mutton Pepper Fry</p></div><span class="dish-price">₹535</span></div><p class="dish-desc">Mutton roasted with pepper and spices.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mutton Mamsam Vepudu</p></div><span class="dish-price">₹535</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">From The Coast — Seafood Starters</h3>
+          <span class="subsection-note">Fresh from the Bay of Bengal</span>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Fish Fry</p></div><span class="dish-price">₹390</span></div><p class="dish-desc">Battered and fried fresh fish.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Fish Roast</p></div><span class="dish-price">₹390</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Apollo Fish</p></div><span class="dish-price">₹405</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Tawa Fish</p></div><span class="dish-price">₹435</span></div><p class="dish-desc">Marinated fish cooked on a tawa.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Prawns Fry</p></div><span class="dish-price">₹485</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Prawns Vepudu</p></div><span class="dish-price">₹485</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Crab Pepper Fry</p></div><span class="dish-price">₹435</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Indo-Chinese Starters</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Veg Manchurian</p></div><span class="dish-price">₹315</span></div><p class="dish-desc">Deep-fried mixed vegetable dumplings tossed in spicy Chinese sauce.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Crispy Corn Salt & Pepper</p></div><span class="dish-price">₹325</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Manchurian</p></div><span class="dish-price">₹365</span></div><p class="dish-desc">Minced chicken cubes cooked in a spicy sauce batter.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chilli Chicken</p></div><span class="dish-price">₹375</span></div><p class="dish-desc">Deep-fried chicken sautéed with spices and sauces.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Lollipop (6 pcs)</p></div><span class="dish-price">₹395</span></div><p class="dish-desc">Chicken winglet shaped into a lollipop and fried.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Spicy Honey Chicken</p></div><span class="dish-price">₹405</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Dragon Chicken</p></div><span class="dish-price">₹405</span></div><p class="dish-desc">Fried chicken in a sweet and sour sauce.</p></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CONTINENTAL & SNACKS ══════════════════════════════════ -->
+    <section id="continental-snacks" class="s-pad s-pad-alt" aria-labelledby="continental-snacks-title">
+      <div class="container-xl px-3">
+
+        <div class="reveal">
+          <span class="section-label">Light & Crisp</span>
+          <h2 class="section-title" id="continental-snacks-title">Continental & <span>Snacks</span></h2>
+          <div class="s-divider"></div>
+          <p class="section-sub mt-3">Cheesy bakes, crunchy bites and easy sharing plates — perfect alongside drinks.</p>
+        </div>
+
+        <div class="subsection-head" style="margin-top:30px;">
+          <h3 class="subsection-title">Veg Continental</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Veg Baked Nachos</p></div><span class="dish-price">₹295</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Vegetable Croquette</p></div><span class="dish-price">₹315</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Terpendow Pepper</p></div><span class="dish-price">₹315</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Mozzarella Cheese Finger</p></div><span class="dish-price">₹325</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Mushroom Duxelle</p></div><span class="dish-price">₹325</span></div><p class="dish-desc">Classic French mix of finely chopped mushrooms, herbs, garlic & shallots.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Cheese Ball</p></div><span class="dish-price">₹325</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Spinach Cheese Ball</p></div><span class="dish-price">₹345</span></div><p class="dish-desc">Cheesy green appetizer made with spinach purée & mozzarella.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Somaa Special Crispy Cottage Cheese Finger</p></div><span class="dish-price">₹365</span></div><span class="dish-tag">Chef's Special</span></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Non-Veg Continental</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Buffalo Wings</p></div><span class="dish-price">₹380</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Crunchy Chicken</p></div><span class="dish-price">₹380</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Nugget</p></div><span class="dish-price">₹380</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Buttermilk Fried Chicken</p></div><span class="dish-price">₹380</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Finger</p></div><span class="dish-price">₹380</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">BBQ Basil Grilled Chicken</p></div><span class="dish-price">₹380</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Grilled Mexican Chicken</p></div><span class="dish-price">₹380</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Baked Nachos</p></div><span class="dish-price">₹415</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Meat Ball</p></div><span class="dish-price">₹435</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Somaa Special Chicken Tikka Tacos</p></div><span class="dish-price">₹435</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mutton Meat Ball</p></div><span class="dish-price">₹445</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Sandwiches</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Veg Plain Sandwich</p></div><span class="dish-price">₹215</span></div></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ RICE, BIRYANI & PULAO ══════════════════════════════════ -->
+    <section id="rice-biryani" class="s-pad" aria-labelledby="rice-biryani-title">
+      <div class="container-xl px-3">
+
+        <div class="reveal">
+          <span class="section-label">SOMAA Signature</span>
+          <h2 class="section-title" id="rice-biryani-title">Rice, Biryani & <span>Pulao</span></h2>
+          <div class="s-divider"></div>
+          <p class="section-sub mt-3">Slow-cooked dum biryanis layered with Andhra coastal flavours — Avakai, Ulavacharu and Gongura — alongside classic pulaos and Indo-Chinese rice.</p>
+        </div>
+
+        <div class="subsection-head" style="margin-top:30px;">
+          <h3 class="subsection-title">Signature Chicken Biryani</h3>
+          <span class="subsection-note">All Chef's Specials</span>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Special Chicken Boneless Biryani</p></div><span class="dish-price">₹525</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Mughlai Zafrani Biryani</p></div><span class="dish-price">₹535</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Wings Hara Masala Biryani</p></div><span class="dish-price">₹515</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Avakai Chicken Biryani</p></div><span class="dish-price">₹515</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Ulavacharu Murgh Biryani</p></div><span class="dish-price">₹535</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken MLA Potlam Biryani</p></div><span class="dish-price">₹525</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Murgh Tikka Biryani</p></div><span class="dish-price">₹525</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Akbar Biryani</p></div><span class="dish-price">₹545</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Shahi Murgh Biryani</p></div><span class="dish-price">₹545</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Punjabi Murgh Biryani</p></div><span class="dish-price">₹525</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Cut Mirchi Chicken Biryani</p></div><span class="dish-price">₹525</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Dum Biryani</p></div><span class="dish-price">₹425</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Fry Biryani</p></div><span class="dish-price">₹425</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Signature Mutton Biryani</h3>
+          <span class="subsection-note">All Chef's Specials</span>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mutton Keema Lajawab Biryani</p></div><span class="dish-price">₹655</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Shahi Ghost Biryani</p></div><span class="dish-price">₹655</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">MLA Potlam Mutton Biryani</p></div><span class="dish-price">₹655</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Ulavacharu Mutton Biryani</p></div><span class="dish-price">₹655</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Akbar Ghost Biryani</p></div><span class="dish-price">₹645</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Avakai Mutton Biryani</p></div><span class="dish-price">₹645</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Gongura Mutton Biryani</p></div><span class="dish-price">₹645</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mutton Hara Masala Biryani</p></div><span class="dish-price">₹645</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Cut Mirchi Mutton Biryani</p></div><span class="dish-price">₹635</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mutton Fry Biryani</p></div><span class="dish-price">₹525</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Fish & Prawns Biryani</h3>
+          <span class="subsection-note">Coastal Chef's Specials</span>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Avakai Fish Biryani</p></div><span class="dish-price">₹535</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Ulavacharu Fish Biryani</p></div><span class="dish-price">₹545</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chettinad Fish Biryani</p></div><span class="dish-price">₹545</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Gongura Fish Biryani</p></div><span class="dish-price">₹545</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Samudra Moti Prawns Biryani</p></div><span class="dish-price">₹625</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Avakai Prawns Biryani</p></div><span class="dish-price">₹635</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Ulavacharu Prawns Biryani</p></div><span class="dish-price">₹645</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Ambada Prawns Biryani</p></div><span class="dish-price">₹635</span></div><span class="dish-tag">Chef's Special</span></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mughlai Prawns Biryani</p></div><span class="dish-price">₹645</span></div><span class="dish-tag">Chef's Special</span></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Veg Biryani</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Veg Biryani</p></div><span class="dish-price">₹365</span></div><p class="dish-desc">Basmati rice with aromatic whole spices and assorted vegetables.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Cut Mirchi Biryani</p></div><span class="dish-price">₹395</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Corn Biryani</p></div><span class="dish-price">₹395</span></div><p class="dish-desc">Sweet corn cooked with blended herbs, spices & basmati.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Peas Biryani</p></div><span class="dish-price">₹395</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Mushroom Biryani</p></div><span class="dish-price">₹395</span></div><p class="dish-desc">An aromatic biryani made with button mushroom.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Ulavacharu Veg Biryani</p></div><span class="dish-price">₹395</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Cashew Biryani</p></div><span class="dish-price">₹435</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Paneer Lazeez Biryani</p></div><span class="dish-price">₹435</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Cashew Paneer Biryani</p></div><span class="dish-price">₹455</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Paneer Tikka Biryani</p></div><span class="dish-price">₹455</span></div></div>
+          <div class="dish-card" data-diet="egg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-egg" aria-hidden="true"></span><p class="dish-name">Egg Biryani</p></div><span class="dish-price">₹395</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Rice & Pulao</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">White Rice</p></div><span class="dish-price">₹135</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Jeera Rice</p></div><span class="dish-price">₹265</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Tomato Rice</p></div><span class="dish-price">₹265</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Curd Rice</p></div><span class="dish-price">₹245</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Dal Khichdi</p></div><span class="dish-price">₹265</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Bisi Bele Bath</p></div><span class="dish-price">₹290</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Bisi Bele Bath</p></div><span class="dish-price">₹385</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Vegetable Pulao</p></div><span class="dish-price">₹325</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Mint Onion Pulao</p></div><span class="dish-price">₹325</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Corn Pulao</p></div><span class="dish-price">₹325</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Peas Pulao</p></div><span class="dish-price">₹355</span></div><p class="dish-desc">A rice pulao made with very few spices and fresh peas.</p></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Paneer Pulao</p></div><span class="dish-price">₹390</span></div></div>
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Methi Paneer Pulao</p></div><span class="dish-price">₹400</span></div></div>
+        </div>
+
+        <div class="subsection-head">
+          <h3 class="subsection-title">Indo-Chinese Rice & Noodles</h3>
+        </div>
+        <div class="dish-grid">
+          <div class="dish-card" data-diet="veg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-veg" aria-hidden="true"></span><p class="dish-name">Veg Fried Rice</p></div><span class="dish-price">₹265</span></div><p class="dish-desc">Fried rice with Chinese herbs.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Fried Rice</p></div><span class="dish-price">₹390</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken 5 Spice Fried Rice</p></div><span class="dish-price">₹390</span></div><p class="dish-desc">Aromatic Chinese rice with a blend of five spices.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Triple Schezwan Fried Rice</p></div><span class="dish-price">₹415</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Mixed Fried Rice</p></div><span class="dish-price">₹435</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Soft Noodles</p></div><span class="dish-price">₹345</span></div></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken American Chopsuey</p></div><span class="dish-price">₹365</span></div><p class="dish-desc">Crispy noodles served with vegetables in a tangy sauce.</p></div>
+          <div class="dish-card" data-diet="nonveg"><div class="dish-row"><div class="dish-id"><span class="dish-dot dot-nonveg" aria-hidden="true"></span><p class="dish-name">Chicken Chinese Chopsuey</p></div><span class="dish-price">₹375</span></div></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--MENU_SECTIONS_PLACEHOLDER-->
+
+  </main>
+
+  <!-- ═══════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container-xl px-3">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a href="index.html" class="logo" aria-label="SOMAA Restobar">
+            <div class="logo-mark" aria-hidden="true">S</div>
+            <div class="logo-text">
+              <span class="logo-name">SOMAA</span>
+              <span class="logo-tagline">Restobar · Visakhapatnam</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">Visakhapatnam's premier luxury dining destination — where every meal is a memory and every evening is an experience.</p>
+          <div class="social-links" aria-label="SOMAA social media">
+            <a href="https://www.instagram.com/somaarestobar/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="SOMAA on Instagram">📸</a>
+            <a href="https://www.facebook.com/somaarestobar/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="SOMAA on Facebook">👤</a>
+            <a href="https://www.youtube.com/@somaarestobar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="SOMAA on YouTube">▶️</a>
+            <a href="https://twitter.com/somaarestobar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="SOMAA on Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <div class="footer-col-title">Quick Links</div>
+          <nav class="footer-links" aria-label="Quick links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="index.html#reserve">Reserve a Table</a>
+            <a href="index.html#contact">Contact Us</a>
+          </nav>
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <div class="footer-col-title">Branches</div>
+          <nav class="footer-links" aria-label="Our branches">
+            <a href="https://maps.google.com/?q=4th+Floor+VIP+Center+VIP+Road+Siripuram+Visakhapatnam" target="_blank" rel="noopener noreferrer">📍 Siripuram</a>
+            <a href="https://maps.google.com/?q=Vivekananda+Nagar+Yendada+Visakhapatnam" target="_blank" rel="noopener noreferrer">📍 Yendada</a>
+            <a href="https://www.swiggy.com/city/vizag/somaa-restobar" target="_blank" rel="noopener noreferrer">🛵 Order on Swiggy</a>
+            <a href="https://www.zomato.com/visakhapatnam/somaa-restobar-siripuram" target="_blank" rel="noopener noreferrer">🍴 Order on Zomato</a>
+          </nav>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-contact-item"><span aria-hidden="true">📞</span><a href="tel:+919211112666">+91 92111 12666</a></div>
+          <div class="footer-contact-item"><span aria-hidden="true">📍</span><span>4th Floor, VIP Center, VIP Road, Siripuram, Vizag 530013</span></div>
+          <div class="footer-contact-item"><span aria-hidden="true">📍</span><span>Vivekananda Nagar, Yendada, Visakhapatnam</span></div>
+          <div class="footer-contact-item"><span aria-hidden="true">🕐</span><span>Daily: 12:00 PM – 11:30 PM</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SOMAA Restobar. All rights reserved. Visakhapatnam, Andhra Pradesh, India.</p>
+        <a href="#" class="back-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const id = this.getAttribute('href');
+        if (id === '#') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          const offset = document.getElementById('filter-bar').offsetHeight + 70;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+          const navCollapse = document.getElementById('navCollapse');
+          if (navCollapse.classList.contains('show')) { bootstrap.Collapse.getInstance(navCollapse)?.hide(); }
+        }
+      });
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+    reveals.forEach(el => revealObserver.observe(el));
+
+    /* Diet filter */
+    const dietButtons = document.querySelectorAll('.diet-btn');
+    const dishCards = document.querySelectorAll('.dish-card');
+    dietButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        dietButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const diet = btn.getAttribute('data-diet');
+        dishCards.forEach(card => {
+          const cardDiet = card.getAttribute('data-diet');
+          card.classList.toggle('is-hidden', diet !== 'all' && cardDiet !== diet);
+        });
+      });
+    });
+
+    /* Active category pill on scroll */
+    const catSections = document.querySelectorAll('main > section[id]');
+    const catPills = document.querySelectorAll('.cat-pill');
+    const catObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          catPills.forEach(p => p.classList.toggle('active', p.getAttribute('href') === `#${id}`));
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '-120px 0px -60% 0px' });
+    catSections.forEach(s => catObserver.observe(s));
+
+    /* Hero image fallback */
+    const heroBg = document.querySelector('.menu-hero-bg');
+    const testImg = new Image();
+    testImg.onerror = () => { heroBg.style.background = 'linear-gradient(135deg,#1a0d00 0%,#0f0f0f 40%,#1a0500 80%,#0f0f0f 100%)'; };
+    testImg.src = 'somaa.png';
+  </script>
+
+</body>
+</html>

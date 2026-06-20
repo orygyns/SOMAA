@@ -290,11 +290,21 @@
       align-items: center;
       overflow: hidden;
     }
-    .hero-bg {
+    .hero-bg-slideshow {
       position: absolute; inset: 0;
-      background: url('somaa.png') center center / cover no-repeat;
       z-index: 0;
+      overflow: hidden;
+      background: #0F0F0F;
     }
+    .hero-bg-slide {
+      position: absolute; inset: 0;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out;
+    }
+    .hero-bg-slide.active { opacity: 1; }
     .hero-overlay {
       position: absolute; inset: 0;
       background: linear-gradient(135deg, rgba(15,15,15,0.9) 0%, rgba(15,15,15,0.72) 55%, rgba(15,15,15,0.84) 100%);
@@ -591,6 +601,8 @@
       gap: 12px; flex-wrap: wrap;
     }
     .footer-bottom p { font-size: 0.71rem; color: var(--muted); margin: 0; }
+    .credit-link { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .credit-link:hover { text-decoration: underline; color: var(--hover); }
     .back-top {
       width: 36px; height: 36px;
       background: var(--card);
@@ -690,7 +702,14 @@
 
     <!-- ═══════════════════════════════ HERO ══════════════════════════════════ -->
     <section id="hero" aria-label="Welcome to SOMAA Restobar">
-      <div class="hero-bg" role="img" aria-label="SOMAA Restobar – luxurious dining atmosphere"></div>
+      <div class="hero-bg-slideshow" role="img" aria-label="SOMAA Restobar – luxurious dining atmosphere">
+        <div class="hero-bg-slide active" style="background-image:url('somaa.png');"></div>
+        <div class="hero-bg-slide" style="background-image:url('somaa2.png');"></div>
+        <div class="hero-bg-slide" style="background-image:url('somaa3.png');"></div>
+        <div class="hero-bg-slide" style="background-image:url('somaa4.png');"></div>
+        <div class="hero-bg-slide" style="background-image:url('somaa5.png');"></div>
+        <div class="hero-bg-slide" style="background-image:url('somaa6.png');"></div>
+      </div>
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="hero-inner">
@@ -916,7 +935,7 @@
                   </div>
                 </div>
                 <div class="branch-actions">
-                  <a href="https://maps.google.com/?q=4th+Floor+VIP+Center+VIP+Road+Siripuram+Visakhapatnam+530013"
+                  <a href="https://www.google.com/maps/place/SOMAA,+Siripuram/@17.726973,83.3163152,681m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a394340cb988247:0x5c09678e7f28c86b!8m2!3d17.726973!4d83.3163152!16s%2Fg%2F11gbt85x9t?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
                      target="_blank" rel="noopener noreferrer"
                      class="btn-s btn-outline-s"
                      aria-label="Open SOMAA Siripuram in Google Maps">
@@ -952,7 +971,7 @@
                   </div>
                 </div>
                 <div class="branch-actions">
-                  <a href="https://maps.google.com/?q=Vivekananda+Nagar+Yendada+Visakhapatnam+Andhra+Pradesh"
+                  <a href="https://www.google.com/maps/place/SOMAA,+Yendada/@17.7784544,83.3543649,1361m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a395b203de46437:0x240954875c2b4bdb!8m2!3d17.7784544!4d83.3543649!16s%2Fg%2F11rqg3_pqg?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
                      target="_blank" rel="noopener noreferrer"
                      class="btn-s btn-outline-s"
                      aria-label="Open SOMAA Yendada in Google Maps">
@@ -990,13 +1009,13 @@
               <h3>Reserve a Table</h3>
               <p>Secure your spot for an unforgettable evening of fine dining, live music, and premium hospitality. Book through your preferred platform.</p>
               <div class="reserve-actions">
-                <a href="https://www.dineout.co.in/vizag/somaa-restobar-siripuram-a17082"
+                <a href="https://www.swiggy.com/restaurants/somaa-restobar-siripuram-dwarka-nagar-79647/dineout"
                    target="_blank" rel="noopener noreferrer"
                    class="btn-s btn-primary-s"
                    aria-label="Reserve a table via Dineout">
-                  <span aria-hidden="true">🏠</span> Dineout
+                  <span aria-hidden="true">🏠</span> Swiggy
                 </a>
-                <a href="https://www.zomato.com/visakhapatnam/somaa-restobar-siripuram"
+                <a href="https://www.zomato.com/visakhapatnam/somaa-restobar-siripuram-vizag/book"
                    target="_blank" rel="noopener noreferrer"
                    class="btn-s btn-outline-s"
                    aria-label="Reserve a table via Zomato">
@@ -1012,13 +1031,13 @@
               <h3>Order Online</h3>
               <p>Craving SOMAA at home? Get our kitchen-fresh dishes and signature specials delivered right to your doorstep.</p>
               <div class="reserve-actions">
-                <a href="https://www.swiggy.com/city/vizag/somaa-restobar"
+                <a href="https://www.swiggy.com/city/vizag/somaa-restobar-dwarka-nagar-dwaraka-nagar-rest79647"
                    target="_blank" rel="noopener noreferrer"
                    class="btn-s btn-primary-s"
                    aria-label="Order from SOMAA on Swiggy">
                   <span aria-hidden="true">🛵</span> Swiggy
                 </a>
-                <a href="https://www.zomato.com/visakhapatnam/somaa-restobar-siripuram/order"
+                <a href="https://www.zomato.com/visakhapatnam/somaa-restobar-siripuram-vizag/order"
                    target="_blank" rel="noopener noreferrer"
                    class="btn-s btn-outline-s"
                    aria-label="Order from SOMAA on Zomato">
@@ -1197,7 +1216,7 @@
             <a href="https://www.swiggy.com/city/vizag/somaa-restobar"
                target="_blank" rel="noopener noreferrer">🛵 Order on Swiggy</a>
             <a href="https://www.zomato.com/visakhapatnam/somaa-restobar-siripuram"
-               target="_blank" rel="noopener noreferrer">🍴 Order on Zomato</a>
+               target="_blank" rel="noopener noreferrer">🛵 Order on Zomato</a>
           </nav>
         </div>
 
@@ -1225,7 +1244,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 SOMAA Restobar. All rights reserved. Visakhapatnam, Andhra Pradesh, India.</p>
+        <p>© 2026 SOMAA Restobar. All rights reserved.      &nbsp;  |   &nbsp;       Designed by <a href="https://orygyns.in/" target="_blank" rel="noopener noreferrer" class="credit-link">ORYGYNS</a></p>
         <a href="#" class="back-top" aria-label="Back to top">↑</a>
       </div>
 
@@ -1294,13 +1313,45 @@
     }, { threshold: 0.4 });
     sections.forEach(s => sectionObserver.observe(s));
 
-    // ──── HERO IMAGE FALLBACK ────
-    const heroBg = document.querySelector('.hero-bg');
-    const testImg = new Image();
-    testImg.onerror = () => {
-      heroBg.style.background = 'linear-gradient(135deg,#1a0d00 0%,#0f0f0f 40%,#1a0500 80%,#0f0f0f 100%)';
-    };
-    testImg.src = 'somaa.png';
+    // ──── HERO SLIDESHOW ────
+    const heroSlideshow = document.querySelector('.hero-bg-slideshow');
+    const heroSlides = Array.from(document.querySelectorAll('.hero-bg-slide'));
+    let heroSlideIndex = heroSlides.findIndex(s => s.classList.contains('active'));
+    if (heroSlideIndex === -1) heroSlideIndex = 0;
+
+    // If an image fails to load, drop that slide out of rotation
+    heroSlides.forEach(slide => {
+      const url = slide.style.backgroundImage.slice(5, -2); // strip url("...")
+      const testImg = new Image();
+      testImg.onerror = () => {
+        slide.dataset.broken = 'true';
+        slide.classList.remove('active');
+      };
+      testImg.src = url;
+    });
+
+    function advanceHeroSlide() {
+      const usable = heroSlides.filter(s => s.dataset.broken !== 'true');
+      if (usable.length === 0) {
+        heroSlideshow.style.background = 'linear-gradient(135deg,#1a0d00 0%,#0f0f0f 40%,#1a0500 80%,#0f0f0f 100%)';
+        return;
+      }
+      if (usable.length === 1) return; // nothing to rotate to
+
+      let current = heroSlides[heroSlideIndex];
+      let nextIndex = heroSlideIndex;
+      do {
+        nextIndex = (nextIndex + 1) % heroSlides.length;
+      } while (heroSlides[nextIndex].dataset.broken === 'true');
+
+      current.classList.remove('active');
+      heroSlides[nextIndex].classList.add('active');
+      heroSlideIndex = nextIndex;
+    }
+
+    if (heroSlides.length > 1) {
+      setInterval(advanceHeroSlide, 3000);
+    }
   </script>
 
 </body>
